@@ -105,7 +105,7 @@ a {
 
 @font-face {
   font-family: Manrope-Regular;
-  src: url("fonts/Manrope-Regular.ttf");
+  src: url("/fonts/Manrope-Regular.ttf");
 }
 .header {
   background-color: #130203;
@@ -329,7 +329,7 @@ input::placeholder {
   height: 24px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("img/bg/add.svg");
+  background-image: url("../img/bg/add.svg");
 }
 
 .search {
@@ -365,7 +365,7 @@ input::placeholder {
   }
 }
 .search__btn {
-  background-image: url("../../img/bg/search.svg");
+  background-image: url("../img/bg/search.svg");
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-box-flex: 0;
@@ -413,7 +413,7 @@ input::placeholder {
   height: 7px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../../img/bg/sort.svg");
+  background-image: url("../img/bg/sort.svg");
 }
 .sort__btn {
   color: #8D8D8D;
@@ -619,7 +619,7 @@ input::placeholder {
   height: 9px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../../img/bg/arrow.svg");
+  background-image: url("../img/bg/arrow.svg");
 }
 .users__tools {
   display: -webkit-box;
@@ -648,7 +648,7 @@ input::placeholder {
   height: 24px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../../img/bg/write.svg");
+  background-image: url("../img/bg/write.svg");
 }
 
 .delete {
@@ -668,7 +668,7 @@ input::placeholder {
   height: 24px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../../img/bg/delete.svg");
+  background-image: url("../img/bg/delete.svg");
 }
 
 .modal {
@@ -849,7 +849,7 @@ input::placeholder {
   height: 7px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../../img/bg/arrow-white.svg");
+  background-image: url("../img/bg/arrow-white.svg");
 }
 .form__select-list {
   position: absolute;
@@ -903,7 +903,7 @@ input::placeholder {
   height: 20px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../../img/bg/white-plus.svg");
+  background-image: url("../img/bg/white-plus.svg");
   opacity: 0;
 }
 .form__item-input-check {
@@ -937,5 +937,5 @@ input::placeholder {
   height: 22px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../../img/bg/date.svg");
+  background-image: url("../img/bg/date.svg");
 }
