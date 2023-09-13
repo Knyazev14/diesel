@@ -105,7 +105,7 @@ a {
 
 @font-face {
   font-family: Manrope-Regular;
-  src: url("/fonts/Manrope-Regular.ttf");
+  src: url("../fonts/Manrope-Regular.ttf");
 }
 .header {
   background-color: #130203;
