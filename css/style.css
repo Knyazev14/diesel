@@ -105,7 +105,7 @@ a {
 
 @font-face {
   font-family: Manrope-Regular;
-  src: url("../../fonts/Manrope-Regular.ttf");
+  src: url("fonts/Manrope-Regular.ttf");
 }
 .header {
   background-color: #130203;
@@ -329,7 +329,7 @@ input::placeholder {
   height: 24px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../../img/bg/add.svg");
+  background-image: url("img/bg/add.svg");
 }
 
 .search {
