@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Пользователи</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <a class="header__logo" href="/">
+                    <img src="/img/icons/logo.svg" alt="Логотип">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list--current">
+                            <a href="/">Пользователи</a>
+                        </li>
+                        <li>
+                            <a href="/">Расписание</a>
+                        </li>
+                        <li>
+                            <a href="/">Тарифы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="filter">
+            <div class="container">
+                <div class="filter__body">
+                    <form class="search" id="search">
+                        <input class="search__input" placeholder="Поиск">
+                        <button class="search__btn"></button>
+                    </form>
+                    <div class="sort" id="sort-mobile">
+                        <div class="sort__btn">Сортировка</div>
+                        <ul class="sort__list">
+                            <li>
+                                <a href="">Пользователь</a>
+
+                            </li>
+                            <li>
+                                <a href="">Телефон</a>
+                            </li>
+                            <li>
+                                <a href="">Занятия</a>
+                            </li>
+                            <li>
+                                <a href="">Начало абонемента</a>
+
+                            </li>
+                            <li>
+                                <a href="">Конец абонемента</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="add"></button>
+                </div>
+            </div>
+        </div>
+        <section class="users">
+            <div class="container users__container">
+                <div class="users__body">
+                    <table class="users__table" id="users-table">
+                        <thead class="users__header">
+                            <tr>
+                                <th><span>Пользователь</span></th>
+                                <th><span>Телефон</span></th>
+                                <th><span>Занятия</span></th>
+                                <th><span>Начало абонемента</span></th>
+                                <th><span>Конец абонемента</span></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="users__table-body">
+
+                            <!-- Вывод пользователей -->
+                            <!-- Пользователь на ПК -->
+                            <tr class="users__desc">
+                                <td>Анна Петрова</td>
+                                <td>89876543210</td>
+                                <td>1</td>
+                                <td>02.01.2024</td>
+                                <td>28.01.2024</td>
+                                <td class="users__tools">
+                                    <span class="edit"><a href=""></a></span>
+                                    <span class="delete"><a href=""></a></span>
+                                </td>
+                            </tr>
+                            <!-- Пользователь на моб устройства -->
+                            <tr class="users__mobile">
+                                <td>
+                                    <div class="users__name">Анна Петрова</div>
+                                    <div class="users__content">
+                                        <div class="users__content-item"><span>Телефон</span><span>89876543210</span></div>
+                                        <div class="users__content-item"><span>Занятия</span><span>1</span></div>
+                                        <div class="users__content-item"><span>Действие абонемента</span><span>02.01.2024 -
+                                                28.01.2024</span></div>
+                                    </div>
+                                    <div class="users__tools">
+                                        <span class="edit"><a href=""></a></span>
+                                        <span class="delete"><a href=""></a></span>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="users__desc">
+                                <td>Анна Петрова</td>
+                                <td>89876543210</td>
+                                <td>1</td>
+                                <td>02.01.2024</td>
+                                <td>28.01.2024</td>
+                                <td class="users__tools">
+                                    <span class="edit"><a href=""></a></span>
+                                    <span class="delete"><a href=""></a></span>
+                                </td>
+                            </tr>
+                            <!-- Пользователь на моб устройства -->
+                            <tr class="users__mobile">
+                                <td>
+                                    <div class="users__name">Анна Петрова</div>
+                                    <div class="users__content">
+                                        <div class="users__content-item"><span>Телефон</span><span>89876543210</span></div>
+                                        <div class="users__content-item"><span>Занятия</span><span>1</span></div>
+                                        <div class="users__content-item"><span>Действие абонемента</span><span>02.01.2024 -
+                                                28.01.2024</span></div>
+                                    </div>
+                                    <div class="users__tools">
+                                        <span class="edit"><a href=""></a></span>
+                                        <span class="delete"><a href=""></a></span>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <!-- Вывод пользователей -->
+                            <tr class="users__desc">
+                                <td>Анна Петрова</td>
+                                <td>89876543210</td>
+                                <td>1</td>
+                                <td>02.01.2024</td>
+                                <td>28.01.2024</td>
+                                <td class="users__tools">
+                                    <span class="edit"><a href=""></a></span>
+                                    <span class="delete"><a href=""></a></span>
+                                </td>
+                            </tr>
+                            <!-- Пользователь на моб устройства -->
+                            <tr class="users__mobile">
+                                <td>
+                                    <div class="users__name">Анна Петрова</div>
+                                    <div class="users__content">
+                                        <div class="users__content-item"><span>Телефон</span><span>89876543210</span></div>
+                                        <div class="users__content-item"><span>Занятия</span><span>1</span></div>
+                                        <div class="users__content-item"><span>Действие абонемента</span><span>02.01.2024 -
+                                                28.01.2024</span></div>
+                                    </div>
+                                    <div class="users__tools">
+                                        <span class="edit"><a href=""></a></span>
+                                        <span class="delete"><a href=""></a></span>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <!-- Вывод пользователей -->
+                            <tr class="users__desc">
+                                <td>Анна Петрова</td>
+                                <td>89876543210</td>
+                                <td>1</td>
+                                <td>02.01.2024</td>
+                                <td>28.01.2024</td>
+                                <td class="users__tools">
+                                    <span class="edit"><a href=""></a></span>
+                                    <span class="delete"><a href=""></a></span>
+                                </td>
+                            </tr>
+                            <!-- Пользователь на моб устройства -->
+                            <tr class="users__mobile">
+                                <td>
+                                    <div class="users__name">Анна Петрова</div>
+                                    <div class="users__content">
+                                        <div class="users__content-item"><span>Телефон</span><span>89876543210</span></div>
+                                        <div class="users__content-item"><span>Занятия</span><span>1</span></div>
+                                        <div class="users__content-item"><span>Действие абонемента</span><span>02.01.2024 -
+                                                28.01.2024</span></div>
+                                    </div>
+                                    <div class="users__tools">
+                                        <span class="edit"><a href=""></a></span>
+                                        <span class="delete"><a href=""></a></span>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <!-- Вывод пользователей -->
+                            <tr class="users__desc">
+                                <td>Анна Петрова</td>
+                                <td>89876543210</td>
+                                <td>1</td>
+                                <td>02.01.2024</td>
+                                <td>28.01.2024</td>
+                                <td class="users__tools">
+                                    <span class="edit"><a href=""></a></span>
+                                    <span class="delete"><a href=""></a></span>
+                                </td>
+                            </tr>
+                            <!-- Пользователь на моб устройства -->
+                            <tr class="users__mobile">
+                                <td>
+                                    <div class="users__name">Анна Петрова</div>
+                                    <div class="users__content">
+                                        <div class="users__content-item"><span>Телефон</span><span>89876543210</span></div>
+                                        <div class="users__content-item"><span>Занятия</span><span>1</span></div>
+                                        <div class="users__content-item"><span>Действие абонемента</span><span>02.01.2024 -
+                                                28.01.2024</span></div>
+                                    </div>
+                                    <div class="users__tools">
+                                        <span class="edit"><a href=""></a></span>
+                                        <span class="delete"><a href=""></a></span>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <!-- Вывод пользователей -->
+                            <tr class="users__desc">
+                                <td>Анна Петрова</td>
+                                <td>89876543210</td>
+                                <td>1</td>
+                                <td>02.01.2024</td>
+                                <td>28.01.2024</td>
+                                <td class="users__tools">
+                                    <span class="edit"><a href=""></a></span>
+                                    <span class="delete"><a href=""></a></span>
+                                </td>
+                            </tr>
+                            <!-- Пользователь на моб устройства -->
+                            <tr class="users__mobile">
+                                <td>
+                                    <div class="users__name">Анна Петрова</div>
+                                    <div class="users__content">
+                                        <div class="users__content-item"><span>Телефон</span><span>89876543210</span></div>
+                                        <div class="users__content-item"><span>Занятия</span><span>1</span></div>
+                                        <div class="users__content-item"><span>Действие абонемента</span><span>02.01.2024 -
+                                                28.01.2024</span></div>
+                                    </div>
+                                    <div class="users__tools">
+                                        <span class="edit"><a href=""></a></span>
+                                        <span class="delete"><a href=""></a></span>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <!-- Вывод пользователей -->
+                            <tr class="users__desc">
+                                <td>Анна Петрова</td>
+                                <td>89876543210</td>
+                                <td>1</td>
+                                <td>02.01.2024</td>
+                                <td>28.01.2024</td>
+                                <td class="users__tools">
+                                    <span class="edit"><a href=""></a></span>
+                                    <span class="delete"><a href=""></a></span>
+                                </td>
+                            </tr>
+                            <!-- Пользователь на моб устройства -->
+                            <tr class="users__mobile">
+                                <td>
+                                    <div class="users__name">Анна Петрова</div>
+                                    <div class="users__content">
+                                        <div class="users__content-item"><span>Телефон</span><span>89876543210</span></div>
+                                        <div class="users__content-item"><span>Занятия</span><span>1</span></div>
+                                        <div class="users__content-item"><span>Действие абонемента</span><span>02.01.2024 -
+                                                28.01.2024</span></div>
+                                    </div>
+                                    <div class="users__tools">
+                                        <span class="edit"><a href=""></a></span>
+                                        <span class="delete"><a href=""></a></span>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <!-- Вывод пользователей -->
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="modal delete-modal">
+        <form class="modal-delete form" action="">
+
+            <div class="modal-delete__title">Удаление пользователя
+                <img class="modal-delete__close" src="img/bg/close.svg" alt="Крестик">
+            </div>
+            <div class="modal-delete__sub-title">Удалить пользователя Анна Петрова?</div>
+            <button class="modal-delete__btn">Удалить</button>
+        </form>
+    </div>
+
+    <div class="modal add-modal">
+        <form class="modal-add form" action="">
+            <div class="modal-delete__title">Добавить пользователя
+                <img class="modal-delete__close" src="img/bg/close.svg" alt="Крестик">
+            </div>
+            <div class="form__item">
+                <label class="form__item-label" for="name">Имя</label>
+                <input class="form__item-input" type="text" id="name">
+            </div>
+            <div class="form__item">
+                <label class="form__item-label" for="surname">Фамилия</label>
+                <input class="form__item-input" type="text" id="surname">
+            </div>
+            <div class="form__item">
+                <label class="form__item-label" for="phone">Телефон</label>
+                <input class="form__item-input" type="text" id="phone">
+            </div>
+            <div class="form__item">
+                <label class="form__item-label" for="phone">Тариф</label>
+                <div class="form__select">
+                    <input  class="form__select-btn form__item-input" type="text" value="Тариф" readonly>
+                    <ul class="form__select-list">
+                        <li>1 занятие</li>
+                        <li>4 занятия</li>
+                        <li>8 занятий</li>
+                        <li>12 занятий</li>
+                        <li>16 занятий</li>
+                        <li>24 занятий</li>
+                        <li>28 занятий</li>
+                        <li>38 занятий</li>
+                    </ul>
+                </div>
+                <input class="form__item-input form__item-input-check" type="checkbox" id="try">
+                <label class="form__item-label form__item-try" for="try"> Добавить пробное занятие</label>
+            </div>
+            <div class="form__item form__item-input-date">
+                <label class="form__item-label" for="date">Начало действия абонемента</label>
+                <input class="form__item-input flatpickr"  id="date" name="date" > 
+            </div>
+            <button class="form__btn">Добавить</button>
+        </form>
+    </div>
+
+    <div class="modal edit-modal">
+        <form class="modal-edit form" action="">
+            <div class="modal-delete__title">Редактирование пользователя
+                <img class="modal-delete__close" src="img/bg/close.svg" alt="Крестик">
+            </div>
+            <div class="form__item">
+                <label class="form__item-label" for="name">Имя</label>
+                <input class="form__item-input" type="text" id="name" value="Анна">
+            </div>
+            <div class="form__item">
+                <label class="form__item-label" for="surname">Фамилия</label>
+                <input class="form__item-input" type="text" id="surname" value="Петрова">
+            </div>
+            <div class="form__item">
+                <label class="form__item-label" for="phone">Телефон</label>
+                <input class="form__item-input" type="text" id="phone" value="89876543210">
+            </div>
+            <div class="form__item">
+                <label class="form__item-label" for="phone">Тариф</label>
+                <div class="form__select">
+                    <input  class="form__select-btn form__item-input" type="text" value="Тариф" readonly>
+                    <ul class="form__select-list">
+                        <li>1 занятие</li>
+                        <li>4 занятия</li>
+                        <li>8 занятий</li>
+                        <li>12 занятий</li>
+                        <li>16 занятий</li>
+                        <li>24 занятий</li>
+                        <li>28 занятий</li>
+                        <li>38 занятий</li>
+                    </ul>
+                </div>
+                <input class="form__item-input form__item-input-check" type="checkbox" id="try">
+                <label class="form__item-label form__item-try" for="try"> Добавить пробное занятие</label>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+
+<script>
+      flatpickr(".flatpickr", {
+        "locale": "ru",
+        }); 
+</script>
+
+<script src="js/app.js" type="module"></script>
+
+
+    
+  
+</html>

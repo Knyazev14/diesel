@@ -1,0 +1,55 @@
+.sort {
+    border: 1px solid  #130203;
+    max-width: 210px;
+    padding: 10px 20px;
+    width: 100%;
+    position: relative;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    @media(min-width:1000px){
+       display: none;
+    }
+    &.sort--open &__list{
+        display: flex;
+        background: white;
+        z-index: 1;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+        width: 12px;
+        height: 7px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../../img/bg/sort.svg');
+    }
+    &__btn {
+        color: #8D8D8D;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+     }
+
+    &__list {
+        position: absolute;
+        top: 41px;
+        border-bottom: 1px solid  #130203;
+        border-left: 1px solid  #130203;
+        border-right: 1px solid  #130203;
+        width: 100%;
+        left: 0;
+        padding: 20px;
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__list li{
+        color: #8D8D8D;
+    }
+}
